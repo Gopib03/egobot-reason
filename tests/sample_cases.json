@@ -1,6 +1,5 @@
-cat > tests/sample_cases.json << 'EOF'
+
 [
   {"test_id":"social_001","mode":"social","image":"assets/sample_videos/handover_frame.jpg","expected":{"intent":"handover","engaged_with_robot":true}},
   {"test_id":"safety_001","mode":"safety","image":"assets/sample_videos/obstacle_frame.jpg","expected":{"collision_risk":"high","recommended_action":"stop"}}
 ]
-EOF

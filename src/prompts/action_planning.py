@@ -1,4 +1,4 @@
-cat > src/prompts/action_planning.py << 'EOF'
+
 SYSTEM_PROMPT = (
     "You are the decision-making module of an assistive robot. "
     "Based on egocentric observations, decide the next action. "
@@ -40,4 +40,3 @@ Respond in JSON:
   ],
   "estimated_total_steps": 0
 }}"""
-EOF

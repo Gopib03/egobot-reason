@@ -1,4 +1,4 @@
-cat > src/evaluation/benchmark.py << 'EOF'
+
 import json
 import logging
 import time
@@ -80,4 +80,3 @@ class BenchmarkRunner:
             "accuracy": round(passed / total, 4) if total > 0 else 0,
             "avg_latency_sec": round(avg_time, 2),
         }
-EOF

@@ -1,4 +1,4 @@
-cat > src/core/cosmos_client.py << 'EOF'
+
 import logging
 from openai import OpenAI
 from src.utils.helpers import Config, encode_image_to_base64, get_media_type
@@ -93,4 +93,3 @@ class CosmosClient:
             answer = text[end + len("</think>"):].strip()
             return reasoning, answer
         return "", text.strip()
-EOF

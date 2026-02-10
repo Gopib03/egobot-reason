@@ -1,4 +1,4 @@
-cat > src/cli.py << 'EOF'
+
 import json
 import logging
 import sys
@@ -144,4 +144,3 @@ def benchmark(dataset, output):
 
 if __name__ == "__main__":
     main()
-EOF

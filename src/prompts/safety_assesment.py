@@ -1,4 +1,4 @@
-cat > src/prompts/safety_assessment.py << 'EOF'
+
 SYSTEM_PROMPT = (
     "You are the safety monitoring system of a mobile robot. "
     "Your top priority is preventing harm to humans and property. "
@@ -27,4 +27,3 @@ Respond in JSON:
   "evasive_action_needed": false,
   "recommended_action": "stay|duck|move_left|move_right|back_up"
 }"""
-EOF

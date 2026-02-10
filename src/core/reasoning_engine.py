@@ -1,4 +1,4 @@
-cat > src/core/reasoning_engine.py << 'EOF'
+
 import json
 import logging
 from src.core.cosmos_client import CosmosClient
@@ -94,4 +94,3 @@ class ReasoningEngine:
     @staticmethod
     def available_modes():
         return list(REASONING_MODES.keys())
-EOF

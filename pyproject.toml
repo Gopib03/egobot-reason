@@ -1,4 +1,4 @@
-cat > pyproject.toml << 'FILE_END'
+
 [build-system]
 requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"

@@ -1,4 +1,4 @@
-cat > tests/test_reasoning.py << 'EOF'
+
 import pytest
 from src.utils.helpers import Config
 from src.core.cosmos_client import CosmosClient
@@ -60,4 +60,3 @@ class TestBenchmark:
         ])
         assert s["total"] == 2
         assert s["accuracy"] == 0.5
-EOF

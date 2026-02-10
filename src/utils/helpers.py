@@ -1,4 +1,4 @@
-cat > src/utils/helpers.py << 'EOF'
+
 import os
 import base64
 from pathlib import Path
@@ -38,4 +38,3 @@ def get_media_type(file_path):
         ".png": "image/png", ".mp4": "video/mp4",
     }
     return mime_map.get(ext, "application/octet-stream")
-EOF

@@ -1,4 +1,4 @@
-cat > src/prompts/spatial_reasoning.py << 'EOF'
+
 SYSTEM_PROMPT = (
     "You are the spatial awareness module of a mobile robot. "
     "You observe the world from a first-person camera. "
@@ -35,4 +35,3 @@ Respond in JSON:
   "confidence": "low|medium|high",
   "reasoning": ""
 }"""
-EOF

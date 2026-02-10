@@ -1,4 +1,4 @@
-cat > src/prompts/social_reasoning.py << 'EOF'
+
 SYSTEM_PROMPT = (
     "You are the vision system of an assistive robot. "
     "You observe the world from a first-person (egocentric) camera. "
@@ -43,4 +43,3 @@ Respond in JSON:
   "cues": [],
   "recommended_robot_response": "ignore|acknowledge|approach|assist|stop"
 }"""
-EOF

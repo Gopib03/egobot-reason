@@ -1,4 +1,4 @@
-cat > src/core/video_processor.py << 'EOF'
+
 import logging
 import tempfile
 from pathlib import Path
@@ -55,4 +55,3 @@ class VideoProcessor:
         info["duration_sec"] = info["frame_count"] / info["fps"] if info["fps"] > 0 else 0
         cap.release()
         return info
-EOF
