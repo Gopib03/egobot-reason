@@ -1,0 +1,20 @@
+cat > pyproject.toml << 'FILE_END'
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "egobot-reason"
+version = "0.1.0"
+description = "Egocentric Robot Reasoning with NVIDIA Cosmos Reason 2"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+keywords = ["robotics", "physical-ai", "cosmos", "nvidia", "egocentric", "reasoning"]
+
+[project.scripts]
+egobot = "src.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
