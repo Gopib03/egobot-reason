@@ -1,4 +1,4 @@
-cat > README.md << 'EOF'
+
 # 🤖 EgoBot Reason — Egocentric Robot Reasoning with Cosmos Reason 2
 
 > NVIDIA Cosmos Cookoff Submission
@@ -89,4 +89,3 @@ pytest tests/
 Apache 2.0
 
 Built with [NVIDIA Cosmos Reason 2](https://build.nvidia.com/nvidia/cosmos-reason2-8b)
-EOF
