@@ -10,11 +10,13 @@ class TestCosmosClient:
     def test_no_key_raises(self):
         with pytest.raises(ValueError):
             CosmosClient(Config(nvidia_api_key=""))
+            
 
     def test_parse_with_tags(self):
         r, a = CosmosClient._parse_reasoning("<think>\nthought\n</think>\nanswer")
         assert r == "thought"
         assert a == "answer"
+        
 
     def test_parse_without_tags(self):
         r, a = CosmosClient._parse_reasoning("plain text")
@@ -26,6 +28,7 @@ class TestReasoningEngine:
     def test_modes_exist(self):
         assert "social" in ReasoningEngine.available_modes()
         assert "safety" in ReasoningEngine.available_modes()
+        
 
     def test_bad_mode(self):
         with pytest.raises(ValueError):
