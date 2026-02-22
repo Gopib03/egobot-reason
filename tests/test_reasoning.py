@@ -10,6 +10,8 @@ class TestCosmosClient:
     def test_no_key_raises(self):
         with pytest.raises(ValueError):
             CosmosClient(Config(nvidia_api_key=""))
+
+    
             
 
     def test_parse_with_tags(self):
